@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,6 @@
 
 </head>
 <body>
-
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#" >
@@ -26,7 +26,7 @@
     </ul>
     <div>
       <form class="form-inline my-2 my-lg-0" action="includes/login.inc.php" method="post">
-        <input class="form-control" name="usernameEmail" type="text" placeholder="Username/Email..." require>
+        <input class="form-control" name="mailuid" type="text" placeholder="Username/Email..." require>
         <input class="form-control" type="password" name="pwd" placeholder="Password">
         <button class="btn btn-outline-success" type="submit" name="login-submit">Login</button>
       </form>
